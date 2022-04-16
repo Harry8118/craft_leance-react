@@ -5,7 +5,6 @@ import SignUpSection from "../organism/Singupsection/SignUpSection";
 import SubScriptionSection from "../organism/Subscriptionsection/SubscriptionSection";
 import Footer from "../organism/Footer/Footer";
 
-import "./Page.scss";
 import CardSection from "../organism/Cardsection/CardSection";
 import ServiceCardSection from "../organism/Servicecardsection/ServiceCardSection";
 
