@@ -1,7 +1,7 @@
 import React from "react";
 import { HiMail } from "react-icons/hi";
 import { BsTelephoneFill } from "react-icons/bs";
-import "./headercontact.scss";
+import "./HeaderContact.scss";
 
 const HeaderContact = () => {
   return (

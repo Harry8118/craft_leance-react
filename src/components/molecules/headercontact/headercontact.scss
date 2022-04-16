@@ -1,6 +1,7 @@
 .header_contact {
   display: flex;
   flex-direction: column;
+  z-index: 1;
   li {
     a {
       display: flex;
@@ -9,6 +10,16 @@
       line-height: 18px;
       svg {
         margin-right: 5px;
+      }
+    }
+  }
+}
+
+.header_contact {
+  li:hover {
+    a {
+      svg {
+        color: #5db442;
       }
     }
   }

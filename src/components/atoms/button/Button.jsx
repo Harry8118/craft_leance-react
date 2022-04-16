@@ -1,10 +1,8 @@
 import React from "react";
-import "./button.scss";
+import "./Button.scss";
 
-import React from "react";
-
-const Button = () => {
-  return <button></button>;
+const Button = ({ className, title }) => {
+  return <button className={className}>{title}</button>;
 };
 
 export default Button;

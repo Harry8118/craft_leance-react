@@ -1,29 +1,24 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaGoogle, FaLinkedinIn } from "react-icons/fa";
-import "./links.scss";
+import "./Links.scss";
+
 const Links = () => {
+  const socialIcons = [
+    { id: 1, icon: <FaFacebookF /> },
+    { id: 2, icon: <FaTwitter /> },
+    { id: 3, icon: <FaGoogle /> },
+    { id: 4, icon: <FaLinkedinIn /> },
+  ];
+
   return (
     <ul className="header_social-icon">
-      <li>
-        <a href="#">
-          <FaFacebookF />
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <FaTwitter />
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <FaGoogle />
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <FaLinkedinIn />
-        </a>
-      </li>
+      {socialIcons.map((icons) => {
+        return (
+          <li key={icons.id}>
+            <a href="">{icons.icon} </a>
+          </li>
+        );
+      })}
     </ul>
   );
 };

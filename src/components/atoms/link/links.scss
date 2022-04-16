@@ -1,8 +1,18 @@
 .header_social-icon {
   display: flex;
-
+  z-index: 1;
   li {
     margin-right: 10px;
+  }
+}
+
+.header_social-icon {
+  li:hover {
+    a {
+      svg {
+        color: #5db442;
+      }
+    }
   }
 }
 

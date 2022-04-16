@@ -1,0 +1,51 @@
+.card_box {
+  width: 280px;
+  padding: 16px;
+  height: auto;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 0 0.2em grey;
+  cursor: help;
+
+  svg {
+    width: 50px;
+    height: auto;
+    color: #5db442;
+  }
+
+  hr {
+    width: 64px;
+    margin: 16px 38%;
+  }
+
+  .card_title {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .card_description {
+    margin-top: 24px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.card_box:hover {
+  background: #5db442;
+  color: #fff;
+  svg,
+  #image_icon {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card_box {
+    width: 270px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

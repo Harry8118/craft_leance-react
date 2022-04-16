@@ -1,0 +1,25 @@
+.main_form-section {
+  background: #efefef;
+
+  .form_section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0 12px 0;
+
+    .form_section-bottomtxt span {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main_form-section {
+    .form_section-container {
+      .form_section-bottomtxt span {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -2,18 +2,18 @@ import React from "react";
 import Links from "../../atoms/link/Links";
 import HeaderContact from "../../molecules/headercontact/HeaderContact";
 import HeaderMenu from "../../molecules/headermenu/HeaderMenu";
-import "./header.scss";
+import "./Header.scss";
 
 const Header = () => {
   return (
     <header>
-      <div className="container">
-        <div className="header_top-black">
+      <div className="header_top-black ">
+        <div className="top_black-row container">
           <Links />
           <HeaderContact />
         </div>
-        <HeaderMenu />
       </div>
+      <HeaderMenu />
     </header>
   );
 };
