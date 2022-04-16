@@ -3,6 +3,7 @@ import { MdOutlineSettingsSuggest } from "react-icons/md";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { RiCupFill } from "react-icons/ri";
 import { SiMinutemailer } from "react-icons/si";
+
 export const platformInformation = [
   {
     icon: <FaBook />,

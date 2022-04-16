@@ -1,0 +1,24 @@
+.footer_content-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .item_title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer_content-item {
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    h4 {
+      margin-top: 40px;
+      font-size: 18px;
+    }
+  }
+}
