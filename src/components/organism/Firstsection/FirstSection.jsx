@@ -1,12 +1,13 @@
 import React from "react";
-import image from "../../../assets/image.png";
+
+import image from "assets/image.png";
 import "./FirstSection.scss";
 
 const FirstSection = () => {
   return (
-    <section className="first_section">
-      <div className="main_section-container container">
-        <div className="main_section-textbox">
+    <section className="first__section">
+      <div className="first__section__container container">
+        <div className="first__section__container__textbox">
           <h1>Bring your Big Data to Life With Carft Lance</h1>
           <p>
             Blue Lance transforms your company's data into rich visuals for you
@@ -15,7 +16,7 @@ const FirstSection = () => {
             further.
           </p>
         </div>
-        <div className="main_section-image">
+        <div className="first__section__container__image">
           <img src={image} alt={"bgImage"} />
         </div>
       </div>

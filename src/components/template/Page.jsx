@@ -1,12 +1,13 @@
 import React from "react";
-import FirstSection from "../organism/Firstsection/FirstSection";
-import Header from "../organism/Header/Header";
-import SignUpSection from "../organism/Singupsection/SignUpSection";
-import SubScriptionSection from "../organism/Subscriptionsection/SubscriptionSection";
-import Footer from "../organism/Footer/Footer";
 
-import CardSection from "../organism/Cardsection/CardSection";
-import ServiceCardSection from "../organism/Servicecardsection/ServiceCardSection";
+import Header from "components/organism/Header/Header";
+import FirstSection from "components/organism/Firstsection/FirstSection";
+import SignUpSection from "components/organism/Singupsection/SignUpSection";
+import SubScriptionSection from "components/organism/Subscriptionsection/SubscriptionSection";
+import Footer from "components/organism/Footer/Footer";
+
+import CardSection from "components/organism/Cardsection/CardSection";
+import ServiceCardSection from "components/organism/Servicecardsection/ServiceCardSection";
 
 const Page = () => {
   return (

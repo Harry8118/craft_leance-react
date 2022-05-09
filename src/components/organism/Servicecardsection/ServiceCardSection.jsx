@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import PackageProductBtn from "../../atom/Packageproductbtn/PackageProductBtn";
-import ServiceCard from "../../molecule/Servicecard/ServiceCard";
-import {
-  businessServices,
-  communityServices,
-} from "../../../data/serviceInformation";
+
+import PackageProductBtn from "components/atom/Packageproductbtn/PackageProductBtn";
+import ServiceCard from "components/molecule/Servicecard/ServiceCard";
+import { businessServices, communityServices } from "data/serviceInformation";
 import "./ServiceCardSection.scss";
 
 const ServiceCardSection = () => {
@@ -22,14 +20,17 @@ const ServiceCardSection = () => {
   };
 
   return (
-    <section className="service_package-section">
-      <div id="package_section" className="package_section">
-        <h2 className="package_title">Affordable Services Package</h2>
+    <section className="service__package">
+      <div
+        id="package__section"
+        className="service__package__section container"
+      >
+        <h2>Affordable Services Package</h2>
         <PackageProductBtn
           clickBusiness={handleClickBusness}
           clickCommunity={handleClickCommunity}
         />
-        <div className="serviceContainer">
+        <div className="service__package__section__container">
           {isBusnessService && (
             <>
               {businessServices.map((elem, index) => {

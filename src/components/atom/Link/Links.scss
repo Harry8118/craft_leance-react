@@ -1,12 +1,11 @@
-.header_social-icon {
+.header__social-icon {
   display: flex;
+  gap: 8px;
   z-index: 1;
-  li {
-    margin-right: 10px;
-  }
-}
+  font-size: 12px;
+  line-height: 18px;
+  color: #fefefe;
 
-.header_social-icon {
   li:hover {
     a {
       svg {
@@ -17,9 +16,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header_social-icon {
-    li {
-      font-size: 16px;
-    }
+  .header__social-icon {
+    line-height: 39px;
   }
 }

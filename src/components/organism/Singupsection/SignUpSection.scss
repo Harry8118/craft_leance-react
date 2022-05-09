@@ -1,12 +1,14 @@
-.signUpSection {
-  .signup_container {
+.signup__section {
+  .signup__container {
+    background-image: url("../../../assets/signupbg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 661px;
     z-index: -1;
     position: relative;
-    img {
-      width: 100%;
-    }
-
-    .signUp_mask {
+    .signup__mask {
       top: 0;
       left: 0;
       position: absolute;

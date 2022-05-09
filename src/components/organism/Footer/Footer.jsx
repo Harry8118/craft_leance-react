@@ -1,14 +1,15 @@
 import React from "react";
-import FooterLinks from "../../atom/FooterLinks/FooterLinks";
-import { footerLinks } from "../../../data/footerLinks";
-import NewsLetterSubScription from "../../atom/Newslettersubsription/NewsLetterSubScription";
+
+import FooterLinks from "components/atom/FooterLinks/FooterLinks";
+import { footerLinks } from "data/footerLinks";
+import NewsLetterSubScription from "components/atom/Newslettersubsription/NewsLetterSubScription";
 import "./Footer.scss";
 
 const Footer = () => {
   return (
     <footer>
-      <div className="footer_container container">
-        <div className="footer_content">
+      <div className="footer__container container">
+        <div className="footer__container__content">
           <NewsLetterSubScription />
 
           {footerLinks.map((element, index) => {
@@ -16,9 +17,11 @@ const Footer = () => {
               <FooterLinks key={index} title={element.title}>
                 {element.links.map((link, index) => {
                   return (
-                    <a key={index} href={link.url}>
-                      {link.title}
-                    </a>
+                    <li>
+                      <a key={index} href={link.url}>
+                        {link.title}
+                      </a>
+                    </li>
                   );
                 })}
               </FooterLinks>
@@ -27,10 +30,10 @@ const Footer = () => {
         </div>
       </div>
 
-      <div class="subfuoter_row">
-        <div class="subfuoter_container container">
+      <div class="subfuoter__row">
+        <div class="subfuoter__row__container container">
           <a href="#">CRAFT LEANCE</a>
-          <div class="subfooter_copyrights-box">
+          <div class="subfuoter__row__container__copyrights-box">
             <p>© Designed by Moin Khan. All Rights Reserved.</p>
             <span>Made by BlueLance</span>
           </div>

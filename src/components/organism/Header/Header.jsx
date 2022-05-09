@@ -1,14 +1,15 @@
 import React from "react";
-import Links from "../../atom/Link/Links";
-import HeaderContact from "../../molecule/Headercontact/HeaderContact";
-import HeaderMenu from "../../molecule/Headermenu/HeaderMenu";
+
+import Links from "components/atom/Link/Links";
+import HeaderContact from "components/molecule/Headercontact/HeaderContact";
+import HeaderMenu from "components/molecule/Headermenu/HeaderMenu";
 import "./Header.scss";
 
 const Header = () => {
   return (
     <header>
-      <div className="header_top-black ">
-        <div className="top_black-row container">
+      <div className="header__top-black ">
+        <div className="header__top-black__row container">
           <Links />
           <HeaderContact />
         </div>

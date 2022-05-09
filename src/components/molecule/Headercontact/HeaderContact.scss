@@ -1,4 +1,4 @@
-.header_contact {
+.header__contact {
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -6,8 +6,9 @@
     a {
       display: flex;
       align-items: center;
-      font-size: 13px;
+      font-size: 12px;
       line-height: 18px;
+      color: #fefefe;
       svg {
         margin-right: 5px;
       }
@@ -15,7 +16,7 @@
   }
 }
 
-.header_contact {
+.header__contact {
   li:hover {
     a {
       svg {
@@ -26,12 +27,13 @@
 }
 
 @media screen and(min-width: 768px) {
-  .header_contact {
+  .header__contact {
     flex-direction: row;
     li {
       margin-right: 10px;
+
       a {
-        font-size: 16px;
+        line-height: 39px;
       }
     }
   }

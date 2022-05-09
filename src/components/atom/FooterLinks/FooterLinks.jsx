@@ -1,14 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import './FooterLinks.scss'
-
+import "./FooterLinks.scss";
 
 const FooterLinks = ({ title, children }) => {
   return (
-    <div className="footer_content-item">
-      <h4 className="item_title">{title}</h4>
+    <ul className="footer__content__item">
+      <h4 className="footer__content__item__title">{title}</h4>
       {children}
-    </div>
+    </ul>
   );
 };
 

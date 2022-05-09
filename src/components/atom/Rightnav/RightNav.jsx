@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "../Button/Button";
+import Button from "components/atom/Button/Button";
 
 const Ul = styled.ul`
-  padding: 10px;
+  gap: 10px;
+  align-items: baseline;
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
@@ -12,10 +13,8 @@ const Ul = styled.ul`
     align-items: center;
     justify-content: center;
     width: 80px;
-    padding: 5px 10px;
-    margin-left: 15px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     a {
       color: #000;
     }
@@ -48,12 +47,18 @@ const Ul = styled.ul`
       padding: 5px 10px;
       background: white;
       width: 30%;
-      margin-bottom: 10px;
-      margin-left: 0;
+      margin-bottom: 5px;
       border-radius: 14px;
       align-items: center;
       justify-content: center;
+    }
+  }
+
+  @media (min-width: 1170px) {
+    gap: 45px;
+    li {
       font-size: 14px;
+      line-height: 24px;
     }
   }
 `;

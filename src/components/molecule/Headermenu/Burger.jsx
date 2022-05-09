@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+
 import styled from "styled-components";
-import RightNav from "../../atom/Rightnav/RightNav";
+import RightNav from "components/atom/Rightnav/RightNav";
 
 const StyledBurger = styled.div`
   width: 20px;

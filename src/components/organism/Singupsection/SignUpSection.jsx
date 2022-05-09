@@ -1,15 +1,14 @@
 import React from "react";
-import image from "../../../assets/signupbg.png";
-import SignUpbox from "../../molecule/Singupbox/SignUpbox";
-import SignUpButtons from "../../molecule/Singupbuttons/SignUpButtons";
+
+import SignUpbox from "components/molecule/Singupbox/SignUpbox";
+import SignUpButtons from "components/molecule/Singupbuttons/SignUpButtons";
 import "./SignUpSection.scss";
 
 const SignUpSection = () => {
   return (
-    <section className="signUpSection">
-      <div className="signup_container">
-        <img src={image} alt={"bgImage"}></img>
-        <div className="signUp_mask"></div>
+    <section className="signup__section">
+      <div className="signup__container">
+        <div className="signup__mask"></div>
         <SignUpbox />
         <SignUpButtons />
       </div>

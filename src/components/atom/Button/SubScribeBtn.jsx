@@ -2,7 +2,7 @@ import React from "react";
 import "./SubScribeBtn.scss";
 
 const SubScribeBtn = () => {
-  return <button className="sub-btn">Use it free</button>;
+  return <input type="submit" value="Use it free" className="sub__btn" />;
 };
 
 export default SubScribeBtn;

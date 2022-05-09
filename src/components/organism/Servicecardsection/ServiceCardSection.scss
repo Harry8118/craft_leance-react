@@ -1,5 +1,5 @@
-.service_package-section {
-  .package_section {
+.service__package {
+  &__section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,36 +12,43 @@
       color: #000;
       padding: 20px 0 20px 0;
     }
-  }
 
-  .serviceContainer {
-    display: flex;
-    margin: 32px 0 32px 0;
-    flex-direction: column;
-    gap: 16px;
+    &__container {
+      display: flex;
+      margin: 32px 0 32px 0;
+      flex-direction: column;
+      gap: 16px;
+    }
   }
 }
 
 @media screen and (min-width: 768px) {
-  .service_package-section {
-    .serviceContainer {
-      flex-direction: row;
-    }
-    .package_section {
+  .service__package {
+    &__section {
       h2 {
         font-size: 36px;
         padding: 40px 0 40px 0;
+      }
+
+      &__container {
+        flex-direction: row;
       }
     }
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .service_package-section {
-    .package_section {
+@media screen and (min-width: 1170px) {
+  .service__package {
+    &__section {
       h2 {
         font-size: 48px;
+        line-height: 60px;
+        color: #000000;
         padding: 60px 0 60px 0;
+      }
+
+      &__container {
+        margin-bottom: 100px;
       }
     }
   }

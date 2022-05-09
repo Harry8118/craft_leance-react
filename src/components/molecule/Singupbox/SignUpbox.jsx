@@ -1,15 +1,17 @@
 import React from "react";
+
 import { FaSignInAlt } from "react-icons/fa";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import "./SignUpBox.scss";
+
 const SignUpbox = () => {
   return (
-    <div className="signup_box">
+    <div className="signup__box">
       <h2>Community Sign Up</h2>
-      <div className="signup_transparent-box">
-        <FaSignInAlt className="signup_icon" />
-        <div className="signup_content">
-          <div className="signup_arrow-box">
+      <div className="signup__transparent-box">
+        <FaSignInAlt className="signup__icon" />
+        <div className="signup__content">
+          <div className="signup__arrow-box">
             <IoIosArrowUp />
             <IoIosArrowDown />
           </div>

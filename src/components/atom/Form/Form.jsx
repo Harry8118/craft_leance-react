@@ -1,5 +1,5 @@
 import React from "react";
-import SubScribeBtn from "../Button/SubScribeBtn";
+import SubScribeBtn from "components/atom/Button/SubScribeBtn";
 import "./Form.scss";
 
 const Form = () => {

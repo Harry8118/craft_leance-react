@@ -1,4 +1,4 @@
-.service_card {
+.service__card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
   border: 1px solid #efefef;
   padding: 16px;
 
-  .service_card-topline {
+  &__topline {
     position: absolute;
     top: -1px;
     margin: 0;
@@ -18,13 +18,15 @@
     outline: none;
     border: none;
   }
-  .service_title {
+
+  &__title {
     padding: 6px 0 16px;
     font-size: 14px;
+    color: #333333;
     font-weight: 500;
   }
 
-  .service_price {
+  &__price {
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -37,6 +39,15 @@
     border-radius: 50%;
     padding: 8px;
     z-index: -1;
+    color: #333333;
+    font-weight: 500;
+    font-size: 23px;
+
+    #month {
+      color: #777777;
+      font-weight: 300;
+      font-size: 10px;
+    }
   }
 
   .benefits {
@@ -61,10 +72,10 @@
     }
   }
 
-  .service_btn {
-    color: #000;
+  &__btn {
+    color: #333333;
     margin-top: 16px;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
     background: #fff;
     cursor: pointer;
@@ -81,7 +92,7 @@
     cursor: pointer;
   }
 
-  .service_card-middleline {
+  &__middleline {
     z-index: -2;
     position: absolute;
     top: 32%;
@@ -93,11 +104,11 @@
   }
 }
 
-.service_card:hover {
-  .service_card-topline {
+.service__card:hover {
+  .service__card__topline {
     background: #5db442;
   }
-  .service_btn:hover {
+  .service__card__btn:hover {
     background: #5db442;
     color: #fff;
   }

@@ -1,15 +1,15 @@
-.signup_btn-box {
+.signup__btn-box {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  .signup_item-box {
+  .signup__item-box {
     position: absolute;
     top: 80%;
     display: flex;
     justify-content: space-between;
     width: calc(300px + (300 + 300 * 0.4) * ((100vw - 360px) / 1280));
-    .signup_item {
+    .signup__item {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -26,33 +26,33 @@
         background: #4ba367;
         margin-bottom: calc(8px + (8 + 8 * 0.4) * ((100vw - 360px) / 1280));
 
-        .item_icon {
+        .item__icon {
           color: #fff;
           font-size: 14px;
         }
       }
     }
 
-    .signup_item:nth-child(2) {
+    .signup__item:nth-child(2) {
       padding-left: 20px;
     }
 
-    .signup_item:nth-child(3) {
+    .signup__item:nth-child(3) {
       padding-left: 20px;
     }
   }
 }
 
 @media screen and (min-width: 768px) {
-  .signup_btn-box {
-    .signup_item-box {
-      .signup_item {
+  .signup__btn-box {
+    .signup__item-box {
+      .signup__item {
         a {
           width: 38px;
           height: 38px;
           margin-bottom: 12px;
 
-          .item_icon {
+          .item__icon {
             font-size: 16px;
           }
         }
@@ -63,16 +63,16 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .signup_btn-box {
-    .signup_item-box {
+  .signup__btn-box {
+    .signup__item-box {
       width: 600px;
-      .signup_item {
+      .signup__item {
         a {
           width: 50px;
           height: 50px;
           margin-bottom: 12px;
 
-          .item_icon {
+          .item__icon {
             font-size: 18px;
           }
         }

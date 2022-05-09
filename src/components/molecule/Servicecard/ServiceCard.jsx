@@ -1,17 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./ServiceCard.scss";
+
 import { BsFillCheckCircleFill } from "react-icons/bs";
-import Button from "../../atom/Button/Button";
+import Button from "components/atom/Button/Button";
+import "./ServiceCard.scss";
 
 const ServiceCard = ({ title, price, keyword, tracking, newsLetter, hour }) => {
   return (
-    <div className="service_card">
-      <hr className="service_card-topline" />
-      <h4 className="service_title">{title}</h4>
-      <p className="service_price">
+    <div className="service__card">
+      <hr className="service__card__topline" />
+      <h4 className="service__card__title">{title}</h4>
+      <p className="service__card__price">
         <span>{price}</span>
-        <span>per month</span>
+        <span id="month">per month</span>
       </p>
 
       <div class="benefits">
@@ -38,8 +39,8 @@ const ServiceCard = ({ title, price, keyword, tracking, newsLetter, hour }) => {
           <span>Letter (free)</span>
         </p>
       </div>
-      <Button className="service_btn" title="FREE NOW" />
-      <span className="service_card-middleline"></span>
+      <Button className="service__card__btn" title="FREE NOW" />
+      <span className="service__card__middleline"></span>
     </div>
   );
 };

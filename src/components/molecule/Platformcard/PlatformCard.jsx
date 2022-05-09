@@ -1,14 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+
 import "./PlatformCard.scss";
 
 const PlatformCard = ({ icon, title, description }) => {
   return (
-    <li className="card_box">
+    <li className="cardbox">
       {icon}
       <hr />
-      <h2 className="card_title">{title}</h2>
-      <p className="card_description">{description}</p>
+      <h2 className="cardbox__title">{title}</h2>
+      <p className="cardbox__description">{description}</p>
     </li>
   );
 };
