@@ -12,15 +12,13 @@ const Footer = () => {
         <div className="footer__container__content">
           <NewsLetterSubScription />
 
-          {footerLinks.map((element, index) => {
+          {footerLinks.map((element) => {
             return (
-              <FooterLinks key={index} title={element.title}>
-                {element.links.map((link, index) => {
+              <FooterLinks key={element.id} title={element.title}>
+                {element.links.map((link) => {
                   return (
-                    <li>
-                      <a key={index} href={link.url}>
-                        {link.title}
-                      </a>
+                    <li key={link.id}>
+                      <a href={link.url}>{link.title}</a>
                     </li>
                   );
                 })}

@@ -33,10 +33,10 @@ const ServiceCardSection = () => {
         <div className="service__package__section__container">
           {isBusnessService && (
             <>
-              {businessServices.map((elem, index) => {
+              {businessServices.map((elem) => {
                 return (
                   <ServiceCard
-                    key={index}
+                    key={elem.id}
                     title={elem.title}
                     price={elem.price}
                     keyword={elem.keyword}
@@ -50,10 +50,10 @@ const ServiceCardSection = () => {
           )}
           {isCommunityService && (
             <>
-              {communityServices.map((elem, index) => {
+              {communityServices.map((elem) => {
                 return (
                   <ServiceCard
-                    key={index}
+                    key={elem.id}
                     title={elem.title}
                     price={elem.price}
                     keyword={elem.keyword}

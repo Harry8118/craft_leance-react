@@ -4,10 +4,10 @@ import "./FooterLinks.scss";
 
 const FooterLinks = ({ title, children }) => {
   return (
-    <ul className="footer__content__item">
+    <div className="footer__content__item">
       <h4 className="footer__content__item__title">{title}</h4>
-      {children}
-    </ul>
+      <ul>{children}</ul>
+    </div>
   );
 };
 

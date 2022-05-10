@@ -13,10 +13,10 @@ const CardSection = () => {
           Platform
         </h2>
         <ul className="card__section-grid">
-          {platformInformation.map((element, index) => {
+          {platformInformation.map((element) => {
             return (
               <PlatformCard
-                key={index}
+                key={element.id}
                 icon={element.icon}
                 title={element.title}
                 description={element.description}

@@ -1,5 +1,6 @@
 export const businessServices = [
   {
+    id: 1,
     title: "BASIC",
     price: "$159",
     keyword: true,
@@ -11,6 +12,7 @@ export const businessServices = [
 
 export const communityServices = [
   {
+    id: 1,
     title: "BASIC",
     price: "$59",
     keyword: false,
@@ -19,6 +21,7 @@ export const communityServices = [
     newsLetter: true,
   },
   {
+    id: 2,
     title: "STANDARD",
     price: "$79",
     keyword: true,
@@ -27,6 +30,7 @@ export const communityServices = [
     newsLetter: true,
   },
   {
+    id: 3,
     title: "UNLIMITED",
     price: "$99",
     keyword: true,

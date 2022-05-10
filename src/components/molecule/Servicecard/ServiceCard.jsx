@@ -15,7 +15,7 @@ const ServiceCard = ({ title, price, keyword, tracking, newsLetter, hour }) => {
         <span id="month">per month</span>
       </p>
 
-      <div class="benefits">
+      <div className="benefits">
         <p>
           <BsFillCheckCircleFill
             className={keyword ? "isbenefit" : "nobenefit"}
