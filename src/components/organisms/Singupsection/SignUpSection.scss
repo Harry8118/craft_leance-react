@@ -1,0 +1,36 @@
+.signup__section {
+  background-image: url("../../../assets/signupbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 340px;
+  width: 100%;
+  z-index: -1;
+  position: relative;
+  &__mask {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(28, 33, 33, 0.5);
+  }
+}
+
+@media screen and(min-width: 520px) {
+  .signup__section {
+    height: 450px;
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .signup__section {
+    height: 520px;
+  }
+}
+
+@media screen and(min-width: 1170px) {
+  .signup__section {
+    height: 680px;
+  }
+}
